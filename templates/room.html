@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+{%block content %}
+
+<div class="msg-box">
+    <h2 id="chatRoomHeader">Chatting with: {{contact}}</h2>
+<div class="allMessages" id="allMessages"></div>
+<div class="inputMessage">
+    <input name="message" id="message" type="text" placeholder="enter the message to be sent">
+ <button type="button" name="send" id="send-btn" 
+ onclick="sendMessage()">SEND</button>
+</div></div>
+<script src="/static/js/script3.js"></script>
+
+
+
+<!--To loop through the prev msges and display them all on refresh-->
+
+{% for msg in messages %}
+{%if room==msg.chatID%}
+<script type="text/javascript">
+    createMessage("{{msg.name}}","{{msg.message}}","{{msg.time}}");
+</script>
+{% endif %}
+{%endfor%}
+
+
+{%endblock%}

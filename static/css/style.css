@@ -1,0 +1,123 @@
+/*.content
+{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.inputForm
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.join{
+    display:flex;
+    flex-direction: row;
+
+}
+.create{
+    width:100%;
+}
+.msg-box{
+    border-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    width:80vw;
+    align-items: stretch;
+}
+
+.messages{
+    overflow-y:scroll;
+    flex:1;
+    width:100%;
+
+}
+
+.inputMessage{
+    padding:10px;
+    display:flex;
+}
+
+h2{
+    text-align: center;
+
+}
+
+#message{
+    flex:1;
+}
+*/
+.text{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.join {
+    display: flex;
+    flex-direction: row;
+}
+
+.create {
+    width: 100%;
+}
+
+.msg-box {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.messages {
+    overflow-y: scroll;
+    flex: 1;
+    width: 100%;
+}
+
+.inputMessage {
+    margin-top: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row; /* Change to row layout */
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#message {
+    flex: 1;
+}

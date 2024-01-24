@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<form class="inputForm" method="post">
+    <h3>Chat App</h3>
+    <h2>Logged in as {{username}}</h2>
+    <div>
+        <label>Contacts:</label>
+        <ul>
+            {% for name in contacts %}
+             {%if name!=username %}
+                <li><a href="/chat/{{ name }}">{{ name }}</a></li>
+                {%endif%}
+            {% endfor %}
+        </ul>
+        
+    </div>
+    <div><label>logout</label><a href="/logout">LOGOUT</a></div>
+    
+</form>
+
+{% if error %}
+<ul>
+    <li>{{error}}</li>
+</ul>
+{% endif %}
+
+{% endblock %}
