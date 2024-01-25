@@ -155,4 +155,4 @@ app.secret_key = config['SECTION']["key"]
 
 
 if __name__ == '__main__':
-    socket.run(app,debug=True,host="0.0.0.0", ssl_context="adhoc")
+    socket.run(app,debug=True)
